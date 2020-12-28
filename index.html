@@ -1,0 +1,308 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>TITLE</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	
+	
+	<!-- Font -->
+	
+	<link href="https://fonts.googleapis.com/css?family=Playball%7CBitter" rel="stylesheet">
+	
+	<!-- Stylesheets -->
+	
+	<link href="common-css/bootstrap.css" rel="stylesheet">
+	
+	
+	<link href="common-css/fluidbox.min.css" rel="stylesheet">
+	
+	<link href="common-css/font-icon.css" rel="stylesheet">
+	
+	
+	<link href="01-homepage/css/styles.css" rel="stylesheet">
+	
+	<link href="01-homepage/css/responsive.css" rel="stylesheet">
+	
+</head>
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("JAN 06, 2021 21:58:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  //document.getElementById("demo").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+document.getElementById('clock').innerHTML = ''
+				+ '<div class="time-sec"><span class="title">'+days+'</span> days </div>'
+				+ '<div class="time-sec"><span class="title">'+hours+'</span> hours </div>'
+				+ '<div class="time-sec"><span class="title">'+minutes+'</span> minutes </div>'
+				+ '<div class="time-sec"><span class="title">'+seconds+'</span> seconds </div>'
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+<body>
+	
+	<header>
+		
+		<div class="container">
+		
+			<a class="logo" href="#"><img src="images/logo-white.png" alt="Logo"></a>
+			
+			<div class="menu-nav-icon" data-nav-menu="#main-menu"><i class="icon icon-bars"></i></div>
+			
+			<ul class="main-menu visible-on-click" id="main-menu">
+				<li><a href="index.html">HOME</a></li>
+			</ul><!-- main-menu -->
+			
+		</div><!-- container -->
+	</header>
+	
+	
+	<div class="main-slider">
+		<div class="display-table center-text">
+			<div class="display-table-cell">
+				<div class="coloumn">
+			        <i class="small-icon icon icon-tie"></i>
+					<h5 class="date">06 JANUARY 2021</h5>
+					<h3 class="pre-title">Save The Date</h3>
+					<h1 class="title">Jyothi Sree <i class="icon icon-heart"></i> Siva</h1>
+					
+				</div><!-- slider-content-->
+			</div><!--display-table-cell-->
+		</div><!-- display-table-->
+	</div><!-- main-slider -->
+	
+	
+	<section class="section story-area center-text">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-1"></div>
+				<div class="col-sm-10">
+					
+					<div class="heading">
+						<h2 class="title">KUNUKU'S INVITATION</h2>
+						<span class="heading-bottom"><i class="icon icon-star"></i></span>
+					</div>
+
+					<p class="desc margin-bottom">Every bride and groom wants an incomparable wedding combined with fantasy 
+					and style. We create stunning, one-of-a-kind events produced and styled to perfection. 
+					From traditional to modern, elegant and relaxed, we focus on any event we plan.</p>
+					
+				</div><!-- col-sm-10 -->
+			</div><!-- row -->
+		</div><!-- container -->
+	</section><!-- section -->
+	
+	<section class="section counter-area center-text">
+		<div class="container">
+			<div class="row">
+			
+				<div class="col-sm-12">
+					<div class="heading">
+						<h2 class="title">Don't miss it!</h2>
+						
+						<li><a href="timer.html"></a></li>
+					</div>
+				</div>
+				
+				<div class="col-sm-2"></div>
+				<div id="demo"></div>
+
+				<div class="col-sm-8">
+					
+					<div class="remaining-time">
+						<div id="clock"></div>
+					</div><!-- remaining-time -->
+				</div><!-- col-sm-10 -->
+				
+			</div><!-- row -->
+		</div><!-- container -->
+	</section><!-- section -->
+	
+	<section class="section w-details-area center-text">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-1"></div>
+				<div class="col-sm-10">
+					
+					<div class="heading">
+						<h2 class="title"><b></b>Wedding Details</h2></b></h2>
+						<span class="heading-bottom"><i class="icon icon-star"></i></span>
+					</div>
+					
+					<div class="wedding-details margin-bottom">
+						
+						<div class="w-detail right">
+							<i class="icon icon-ciurclke"></i>
+							<h4 class="title"><b>SAMUHURTHAM</b></h4>
+							<p>Look at the most passionate ceremony ever. We wish happiness to the wedding couple.</p>
+							<P>On Thrusday 6th January,2021.<br>At night 9:58.</br></P>
+						</div><!-- w-detail -->
+						
+						<div class="w-detail left">
+							<i class="icon icon-wine-glass"></i>
+							<h4 class="title"><b>VENUE</b></h4>
+							<p>S.L.V Convention A/c Function Hall,<br>Kalyanamandapam,</br>Dwarakatirumala,</br>W.G. District.</p>
+						</div><!-- w-detail -->
+						
+						<div class="w-detail right">
+							<i class="icon icon-cake"></i>
+							<h4 class="title"><b>RECEPTION</b></h4>
+							<P><br><h5>On  Thrusday </h5>7th JANUARY,2021.</br>At  Akarsh  Pride  FunctionHall</br>R.R  Peta</br>Eluru.</P>
+						</div><!-- w-detail -->
+						
+						<div class="w-detail left">
+							<i class="icon icon-camera"></i>
+							<h4 class="title">PHOTOGRAPHY & LUNCH</h4>
+							<P>On Thrusday 7th JANUARY,2021.<h5>at 12:00 pm Onwards,</h5>Akarsh Pride Function Hall,Eluru.</br></P>
+					</div><!-- wedding-details -->
+					
+				</div><!-- col-sm-10 -->
+			</div><!-- row -->
+		</div><!-- container -->
+	</section><!-- section -->
+	
+	<section class="section ceremony-area center-text">
+		<div class="container">
+			<div class="col">
+				<div class="col-sm-12">
+					
+					<div class="heading">
+						<h2 class="title">Wedding & Ceremonies</h2>
+						<span class="heading-bottom"><i class="color-white icon icon-star"></i></span>
+					</div>
+
+					<div class="ceremony margin-bottom">
+						<p class="desc">We assist our clients in creating memorable, magical 
+						celebrations that exceed expectations. Our personal approach ensures the weddings we 
+						plan are meaningful and truly reflect our clients as individuals, as couples, and states 
+						something about their shared values and sense of style.</p>
+						
+					</div>
+					
+				</div><!-- col-sm-10 -->
+			</div><!-- row -->
+		</div><!-- container -->
+	</section><!-- section -->
+	
+	
+	
+	<section class="section galery-area center-text">
+		<div class="container">
+			<div class="row">
+				
+				<div class="col-sm-12">
+					
+					<div class="heading">
+						<h2 class="title">Our Memories</h2>
+						<span class="heading-bottom"><i class="icon icon-star"></i></span>
+					</div>
+					
+					<div class="image-gallery">
+						<div class="row">
+					
+							<div class="col-md-4 col-sm-6">
+								<a href="images/gallery-1-600x400.jpg" data-fluidbox><img class="margin-bottom" src="images/gallery-1-600x400.jpg" alt="Gallery Image"alt="Lights" style="width:100%"></a>
+							</div><!-- col-sm-4 -->
+							
+							<div class="col-md-4 col-sm-6">
+								<a href="images/gallery-2-600x400.jpg" data-fluidbox><img class="margin-bottom" src="images/gallery-2-600x400.jpg" alt="Gallery Image"></a>
+							</div><!-- col-sm-4 -->
+							
+							<div class="col-md-4 col-sm-6">
+								<a href="images/gallery-3-600x400.jpg" data-fluidbox><img class="margin-bottom" src="images/gallery-3-600x400.jpg" alt="Gallery Image"></a>
+							</div><!-- col-sm-4 -->
+							
+						
+							
+							
+						</div><!-- row -->
+						
+					</div><!-- image-gallery -->
+					
+				</div><!-- col-sm-10 -->
+			</div><!-- row -->
+		</div><!-- container -->
+	</section><!-- section -->
+	
+	<section class="contact-area">
+		<div class="contact-wrapper section float-left">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2"></div>
+					
+					<div class="col-sm-10">
+						<div class="heading">
+							<h3 class="title">Contact Us</h3>
+							<i class="icon icon-star"></i>
+						</div>
+						
+						<div class="margin-bottom">
+							<p>On the JANUARY 2021</p>
+							<p>Join us as we celebrate life and love.</p>
+							<h4><a href="tel:99482656645" class="phone">99482656645</a></h4>
+							<p>Beside K.S.Talkies<br>Vijayawada Road</br>Hanuman Junction</br>Krishna(dt)</p>
+							
+						</div><!-- margin-bottom -->
+					</div><!-- col-sm-10 -->
+					
+				</div><!-- row -->
+			</div><!-- container -->
+		</div><!-- float-left -->
+		
+		<div class="map-area">
+			<div id="map" style="height:100%;"></div>
+		</div><!-- map-area -->
+		<script async defer src="https:https://www.google.com/maps/place/Gandhi+Nagar+High+School/@16.7161815,81.1059242,69m/data=!3m1!1e3!4m8!1m2!2m1!1sgandhinagar+in+eluru!3m4!1s0x0:0x5b760451b43f83ec!8m2!3d16.7161927!4d81.1061382"></script>
+	
+	</section><!-- section -->
+	
+	
+	<footer>
+		<div class="container center-text">
+			
+			<ul class="footer-links">
+				 <i class="icon icon-star"></i><i class="icon icon-star"></i><i class="icon icon-star"></i>
+				<h4><cetre>MARUTHI   MARADANI</cetre></h4></ul>
+			</br>
+		    </br>
+			</ul>
+		</div>
+	</footer>
+	<!-- SCIPTS -->
+	
+	<script src="common-js/jquery-3.1.1.min.js"></script>
+	
+	<script src="common-js/tether.min.js"></script>
+	
+	<script src="common-js/bootstrap.js"></script>
+	
+	<script src="common-js/jquery.countdown.min.js"></script>
+	
+	<script src="common-js/jquery.fluidbox.min.js"></script>
+	
+	
+	<script src="common-js/scripts.js"></script>		
+			
+</body>
+</html>
